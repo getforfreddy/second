@@ -1,7 +1,7 @@
 main() {
   Set<String> fruits = {"Apple", "Orange", "Mango", "Banana"};
   Set<int> numbers = {10, 20, 30};
-  numbers.addAll([40,50]);
+  numbers.addAll([40, 50]);
   print("First Value is ${fruits.first}");
   print("Last Value is ${fruits.last}");
   print("Is fruits empty? ${fruits.isEmpty}");
@@ -18,5 +18,4 @@ main() {
   print("After adding 40 and 50: $numbers");
   // fruits.clear();
   // print(fruits);
-
 }

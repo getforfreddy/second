@@ -1,22 +1,26 @@
-class Laptop{
-turnOff(){
-  print("Turn off Laptop");
-}turnOn(){
-  print("Turn on Laptop");
+class Laptop {
+  turnOff() {
+    print("Turn off Laptop");
+  }
+
+  turnOn() {
+    print("Turn on Laptop");
+  }
 }
-}
-class Macbook implements Laptop{
+
+class Macbook implements Laptop {
   @override
   turnOff() {
-   print("Turn off Macbook");
+    print("Turn off Macbook");
   }
 
   @override
   turnOn() {
-  print("Turn On Macbook");
+    print("Turn On Macbook");
   }
 }
-class Asus implements Laptop{
+
+class Asus implements Laptop {
   @override
   turnOff() {
     print("Turn off Asus");
@@ -27,8 +31,9 @@ class Asus implements Laptop{
     print("Turn On Asus");
   }
 }
-main(){
-  var mac=Macbook();
+
+main() {
+  var mac = Macbook();
   mac.turnOn();
   // mac.turnOn();
   // Laptop lap2;
@@ -36,8 +41,8 @@ main(){
   // lap2.turnOn();
   // Laptop Lap=Macbook();
   Laptop Lap2;
-  Lap2=Macbook();
+  Lap2 = Macbook();
   Lap2.turnOff();
-  Lap2=Asus();
+  Lap2 = Asus();
   Lap2.turnOff();
 }

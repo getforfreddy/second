@@ -1,21 +1,26 @@
-abstract class Bank{
-  rateOfIntrest(){
-    print("Rate of intrest");
+abstract class Bank {
+  rateOfInterest() {
+    print("Rate of interest");
   }
+
   credt();
-}class Sbi extends Bank{
+}
+
+class Sbi extends Bank {
   @override
   credt() {
     print("Amount is Credited");
   }
+
   @override
-  rateOfIntrest() {
-    // TODO: implement rateOfIntrest
-    return super.rateOfIntrest();
+  rateOfInterest() {
+    return super.rateOfInterest();
   }
-}main(){
+}
+
+main() {
   Bank Bank1;
-  Bank1=Sbi();
-  Bank1.rateOfIntrest();
+  Bank1 = Sbi();
+  Bank1.rateOfInterest();
   Bank1.credt();
 }
